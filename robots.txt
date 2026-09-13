@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://b38787-afk.github.io/lol-rank-landing/sitemap.xml
