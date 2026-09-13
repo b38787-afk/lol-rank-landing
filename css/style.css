@@ -470,6 +470,80 @@ p { text-wrap: pretty; }
 .footer-disclaimer { margin: 0; font-size: 13px; line-height: 1.8; color: var(--text); max-width: 88ch; }
 .footer-bottom { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 12px; color: var(--mute); }
 
+/* Consultation popup */
+.promo-toggle { position: absolute; opacity: 0; pointer-events: none; }
+.promo-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.promo-toggle:checked ~ .promo-overlay { display: flex; }
+.promo-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 5, 6, .72);
+  backdrop-filter: blur(3px);
+  cursor: pointer;
+}
+.promo-card {
+  position: relative;
+  width: min(420px, 100%);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: linear-gradient(180deg, var(--panel2), var(--panel));
+  padding: clamp(30px, 5vw, 38px) clamp(24px, 4vw, 32px) clamp(24px, 4vw, 30px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .6);
+}
+.promo-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--mute);
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+}
+.promo-close:hover { border-color: var(--accent); color: var(--accent); }
+.promo-live {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+.promo-title {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-size: clamp(24px, 4.4vw, 30px);
+  line-height: 1.24;
+  margin: 0 0 14px;
+}
+.promo-desc { font-size: 14.5px; line-height: 1.7; color: var(--mute); margin: 0 0 24px; }
+.promo-cta { display: block; width: 100%; text-align: center; }
+.promo-dismiss {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--mute);
+  cursor: pointer;
+}
+.promo-dismiss:hover { color: var(--text); }
+
 /* Floating CTA */
 .floating-cta {
   position: fixed;
