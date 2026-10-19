@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://b38787-afk.github.io/lol-rank-landing/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://b38787-afk.github.io/lol-rank-landing/</loc></url>
+  <url><loc>https://b38787-afk.github.io/lol-rank-landing/guides/</loc></url>
+  <url><loc>https://b38787-afk.github.io/lol-rank-landing/coaching/</loc></url>
+  <url><loc>https://b38787-afk.github.io/lol-rank-landing/guides/replay-review/</loc></url>
+  <url><loc>https://b38787-afk.github.io/lol-rank-landing/guides/jungle-pathing/</loc></url>
+  <url><loc>https://b38787-afk.github.io/lol-rank-landing/guides/cs-practice/</loc></url>
 </urlset>
