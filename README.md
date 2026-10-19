@@ -25,7 +25,7 @@ node scripts/build-static.cjs
 
 ## 분석 이벤트
 
-`js/marketing-events.js`는 `gtag`가 별도로 연결된 경우에만 상담·가격·강의 이동 이벤트를 전송합니다. 이 파일 자체는 Google Analytics를 로드하지 않으며 현재 측정 ID도 설정하지 않았습니다. 분석 계정 연결과 데이터 수집 설정은 운영자 승인 후 진행해야 합니다. 버튼 클릭은 실제 상담이나 구매를 뜻하지 않습니다.
+`js/marketing-events.js`는 `gtag`가 별도로 연결된 경우에만 상담·가격·강의 이동 이벤트를 전송합니다. `js/analytics.js`가 운영자 승인으로 연결한 `G-HQLN9RZYSE`를 방문자 동의 후 불러옵니다. 거절하면 Google 통계 스크립트를 불러오지 않으며, 각 페이지 하단에서 동의를 철회할 수 있습니다. 수집 안내는 `analytics-notice/index.html`에 있습니다. 버튼 클릭은 실제 상담이나 구매를 뜻하지 않습니다.
 
 ## 이번 작업 범위
 
